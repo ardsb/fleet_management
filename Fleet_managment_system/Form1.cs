@@ -30,7 +30,7 @@ namespace Fleet_managment_system
                     string q = "insert into Vehicle(Type,Reg_ID,Brand,Model,color,Year)values('" + vehiclelistBox.Text + "','" + regidbox.Text.ToString() + "','" + brandbox.Text.ToString() + "','" + modelbox.Text.ToString() + "','" + colorbox.Text.ToString() + "','" + yearbox.Text.ToString() + "')";
                     SqlCommand cmd = new SqlCommand(q, con);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Vehicle has been Successfully Added.");
+                    MessageBox.Show("Vehicle has been Successfully Added Updated by ismail ");
 
                 }
                 catch (SqlException exception)
