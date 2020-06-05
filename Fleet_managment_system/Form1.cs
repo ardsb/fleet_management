@@ -25,17 +25,12 @@ namespace Fleet_managment_system
             con.Open();
             if (con.State == System.Data.ConnectionState.Open)
             {
-                try
+
                 {
-                    string q = "insert into Vehicle(Type,Reg_ID,Brand,Model,color,Year)values('" + vehiclelistBox.Text + "','" + regidbox.Text.ToString() + "','" + brandbox.Text.ToString() + "','" + modelbox.Text.ToString() + "','" + colorbox.Text.ToString() + "','" + yearbox.Text.ToString() + "')";
+                    string q = "insert into Vehicle(Type,Reg_ID,Brand,Model,color,Year)values('" + Vehiclebox.Text + "','" + regidbox.Text.ToString() + "','" + brandbox.Text.ToString() + "','" + modelbox.Text.ToString() + "','" + colorbox.Text.ToString() + "','" + yearbox.Text.ToString() + "')";
                     SqlCommand cmd = new SqlCommand(q, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Vehicle has been Successfully Added Updated by ismail ");
-
-                }
-                catch (SqlException exception)
-                {
-                    MessageBox.Show(exception.Mecadcdssage);
                 }
             }
         }
@@ -67,17 +62,7 @@ namespace Fleet_managment_system
 
         private void button5_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(conString);
-            con.Open();
-            if (con.State ==System.Data.ConnectionState.Open)
-            {
-                string q = "insert into Vehicle3(Types,Reg_ID,Brand,Model,color,Year)values('" + regidbox.Text.ToString() + "','" + brandbox.Text.ToString() + "','" + modelbox.Text.ToString() + "','" + colorbox.Text.ToString() + "','" + yearbox.Text.ToString()+"')";
-                SqlCommand cmd = new SqlCommand(q, con);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Vehicle Has Successfully Added....:");
-
-
-            }
+           
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -113,6 +98,11 @@ namespace Fleet_managment_system
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Vehiclebox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

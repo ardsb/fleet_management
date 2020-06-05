@@ -49,11 +49,11 @@
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.colorDialog2 = new System.Windows.Forms.ColorDialog();
             this.label7 = new System.Windows.Forms.Label();
-            this.vehiclelistBox = new System.Windows.Forms.ListBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.button6 = new System.Windows.Forms.Button();
             this.userControl21 = new Fleet_managment_system.UserControl2();
             this.yearbox = new System.Windows.Forms.DateTimePicker();
+            this.Vehiclebox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,10 +102,10 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(204, 3);
+            this.button1.Location = new System.Drawing.Point(139, 341);
             this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 37);
+            this.button1.Size = new System.Drawing.Size(122, 37);
             this.button1.TabIndex = 3;
             this.button1.Text = "Add Vehicle";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -115,7 +115,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(477, 3);
+            this.button2.Location = new System.Drawing.Point(286, 26);
             this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 37);
@@ -129,10 +129,10 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(204, 44);
+            this.button3.Location = new System.Drawing.Point(274, 341);
             this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(131, 40);
+            this.button3.Size = new System.Drawing.Size(87, 37);
             this.button3.TabIndex = 5;
             this.button3.Text = "Delete";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -142,7 +142,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(339, 3);
+            this.button4.Location = new System.Drawing.Point(126, 26);
             this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(134, 37);
@@ -243,34 +243,15 @@
             this.label7.Text = "Vehicle type";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // vehiclelistBox
-            // 
-            this.vehiclelistBox.BackColor = System.Drawing.Color.Silver;
-            this.vehiclelistBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vehiclelistBox.FormattingEnabled = true;
-            this.vehiclelistBox.ItemHeight = 19;
-            this.vehiclelistBox.Items.AddRange(new object[] {
-            "Sedan",
-            "SUV",
-            "Small Cars",
-            "Jeep(WD) ",
-            "7-seater van",
-            "Commuter van"});
-            this.vehiclelistBox.Location = new System.Drawing.Point(126, 130);
-            this.vehiclelistBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.vehiclelistBox.Name = "vehiclelistBox";
-            this.vehiclelistBox.Size = new System.Drawing.Size(128, 23);
-            this.vehiclelistBox.TabIndex = 17;
-            // 
             // button6
             // 
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(121, 3);
+            this.button6.Location = new System.Drawing.Point(9, 336);
             this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(79, 81);
+            this.button6.Size = new System.Drawing.Size(71, 42);
             this.button6.TabIndex = 3;
             this.button6.Text = "Back";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -293,15 +274,31 @@
             this.yearbox.TabIndex = 19;
             this.yearbox.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
+            // Vehiclebox
+            // 
+            this.Vehiclebox.Items.AddRange(new object[] {
+            "Sedan",
+            "SUV",
+            "Small Cars",
+            "Jeep(WD) ",
+            "7-seater van",
+            "Commuter van"});
+            this.Vehiclebox.Location = new System.Drawing.Point(126, 125);
+            this.Vehiclebox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Vehiclebox.Name = "Vehiclebox";
+            this.Vehiclebox.Size = new System.Drawing.Size(92, 21);
+            this.Vehiclebox.TabIndex = 0;
+            this.Vehiclebox.SelectedIndexChanged += new System.EventHandler(this.Vehiclebox_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 396);
+            this.Controls.Add(this.Vehiclebox);
             this.Controls.Add(this.yearbox);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.userControl21);
-            this.Controls.Add(this.vehiclelistBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.colorbox);
             this.Controls.Add(this.modelbox);
@@ -348,11 +345,11 @@
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.ColorDialog colorDialog2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ListBox vehiclelistBox;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private UserControl2 userControl21;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.DateTimePicker yearbox;
+        private System.Windows.Forms.ComboBox Vehiclebox;
     }
 }
 
