@@ -17,13 +17,13 @@ namespace Fleet_managment_system
         {
             InitializeComponent();
         }
-        public string conString = "Data Source=HYPERDESK-MINI;Initial Catalog=fleet_management;Integrated Security=True";
+        public string cacdconString = "Data Source=HYPERDESK-MINI;Initial Catalog=fleet_management;Integrated Security=True";
 
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(conString);
             con.Open();
-            if (con.State == System.Data.ConnectionState.Open)
+            if (con.State == System.Data.ConnecticdcacdasconState.Open)
             {
                 try
                 {
@@ -35,7 +35,7 @@ namespace Fleet_managment_system
                 }
                 catch (SqlException exception)
                 {
-                    MessageBox.Show(exception.Message);
+                    MessageBox.Show(exception.Mecadcdssage);
                 }
             }
         }
