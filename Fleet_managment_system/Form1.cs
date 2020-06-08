@@ -37,7 +37,18 @@ namespace Fleet_managment_system
 
             private void button3_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("Are you sure you want delete your data","Warning",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Vehiclebox.ResetText();
+                regidbox.Text = "";
+                brandbox.Text = "";
+                modelbox.Text = "";
+                colorbox.Text = "";
+                yearbox.ResetText();
+            }
+            
+           
+            
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -67,9 +78,10 @@ namespace Fleet_managment_system
 
         private void button4_Click(object sender, EventArgs e)
         {
+
             userControl21.Show();
             userControl21.BringToFront();
-          
+
         }
 
         private void userControl11_Load(object sender, EventArgs e)
@@ -94,7 +106,9 @@ namespace Fleet_managment_system
 
         private void button6_Click(object sender, EventArgs e)
         {
+
             userControl21.Hide();
+            
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -105,6 +119,10 @@ namespace Fleet_managment_system
         private void Vehiclebox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void userControl21_Load(object sender, EventArgs e)
+        {
         }
     }
 }

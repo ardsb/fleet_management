@@ -117,4 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAOtSURBVFhHxZdZTxNRGIb5AVzhryhlUYxBr11YRMEFSIwC6p0xXhnjEvEHuGHAO/ZCouICCCpK
+        sFAvFNyoNIHqDbI1EFlVSh3y+b2nZ6SlpzNTqvFNnuTMcr73neWcOZNgVa6txUlMKdPADDLzDEnQxj4c
+        wzlJslv84mJ2xsH4Gd3QDJyLPnZZJnZx50SmktEYlYkV0Bc1EmVZa+IONmaYURXdCKhlk+WNxSdmMrOy
+        498ENTOljVp8Aq78X5jroLb6TvABPPOI2z6Qf4bGmzrI1+6MiXHHY+rfdzqslgQeke8E78TLEnbyqx1H
+        aWVmljYq//Q3cm4/ElZTUiltg+IdGGoRb3t/3mlZimjMNUDvqhxMozG3HTTZPyh7EbXsKqFnmw+G1WXg
+        tTZEeaMp5OAf9ADLcwtUY8+matseSzRsKxD9oDs7j4l97Wn56+s7dHPMcMpJRg+wOD4VYWKGLj0AaEnN
+        o76MIr0+PJMQAFNnmLHOWgBfWHEr6AoNAJrtueTMKBT1OUwpAmD+jjAHegBtJUD3so+HFTKirfiM6Aet
+        DwAakrOpe8th6s0oakAAfEQMA0BaICDuBB6HEUsTPloN/JK91AFALdOZXjCIAKFftagBNqpoASSLCKA0
+        B3qAlaUf1HfpOr29VS+2va0vqPfC1eBVj02J9ue2bnFsoKKOXOUVog2ZBCBLATAMO8vOUe/Fa2LbXXef
+        OkvP0tyXUZplOkrO0qf6B+KY8/xVenryvGhDVgL890dg+hKuahpNDbhpxvNZbC+MTojZLvBzWTD55iMt
+        fJ0Ux2Y8XvK9GxJtyCSAGwFMh+F33wxVJ2dRS+4Jse26fEMU8L0fEmZou8pvimMYrrWpOaINmQRoRADT
+        iSgemQQoQwDTqTgeGQTwM5v07wEWkFED4BHgY/TnEfDtRhHfBw8/Bo9ou64Eh15LzgmqTcsVbcggQLMw
+        h9jM8HOs8czmbXtBX51vxPa0e5i8j7rIv7BE/vlFGnnYRdOfRsSx0Zev6UtHj2hDUQJoNbY9KdI+KDZU
+        Lkj8cSxIcOdwNxQBqqTtmthQuSTryztFQzzJ4CpjAZPV3d0lKvMRRr1MZ0PlovT55kNUZ8tSFYuVWSZZ
+        2qnFhsplec+WQnLYc1RFrQJz42W5LjZU/pjw95vupuxVFTcDt934yteLDZW/ZlhStabtV5mo0JgqJrZf
+        s1CxqfLn9En6AeKhpDIFmGSaIoZaPGLTiN9zLKuwvGKzRcbNNDJlTHCGM1VCwm+tIK/blnI7+wAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
 </root>
